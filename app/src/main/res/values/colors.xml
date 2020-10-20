@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FB5400</color>
+    <color name="colorPrimaryDark">#FB5400</color>
+    <color name="colorAccent">#FB5400</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#E3E3E3</color>
+    <color name="black">#000000</color>
+    <color name="dark_black">#000000</color>
+    <color name="dark_gray">#424141</color>
+    <color name="color_1">#29D386</color>
+    <color name="dark_green">#20A069</color>
+    <color name="color_2">#1b4ddc</color>
+    <color name="color_3">#ff0023</color>
+    <color name="orange">#ffbb00</color>
+    <color name="yelow">#ffee05</color>
+    <color name="yelow1">#08FFEE05</color>
+    <color name="purple">#ed0bc0</color>
+
+    <color name="green">#FB5400</color>
+    <color name="light_gray">#faf5f5</color>
+    <color name="light_green">#D0DEFFEC</color>
+    <color name="contact_name">#333333</color>
+    <color name="contact_number">#8c8c8c</color>
+    <color name="delete">#8D0000</color>
+    <color name="edit">#2196F3</color>
+
+</resources>

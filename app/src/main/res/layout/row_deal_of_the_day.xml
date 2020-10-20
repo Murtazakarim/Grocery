@@ -1,0 +1,157 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_view_top"
+    android:layout_width="135dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="2dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:id="@+id/showproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:id="@+id/tvOffPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_unfilled_green"
+        android:text="11% OFF"
+        android:textSize="10sp"
+        android:fontFamily="@font/roboto_light"
+        android:layout_margin="@dimen/space_2"
+        android:textColor="@color/dark_green"
+        android:padding="@dimen/space_5"/>
+</RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/offer_product_prize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/tv_toolbar_price"
+                    android:textColor="@color/dark_gray"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/product_prize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center"
+                    android:text="@string/tv_toolbar_price"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_normal" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:lines="2"
+                android:paddingLeft="@dimen/space_2"
+                android:paddingRight="@dimen/space_2"
+                android:layout_marginBottom="@dimen/space_2"
+                android:text="Product Name"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/space_2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvUnitValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/space_5"
+                android:textColor="@color/dark_gray"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/llAddMinusBtns"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_subcat_minus"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    app:srcCompat="@drawable/minus" />
+            <TextView
+                android:id="@+id/tv_subcat_contetiy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:text="0" />
+
+                <ImageView
+                    android:id="@+id/iv_subcat_plus"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/plus" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_subcat_add"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_rounded_button"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Add"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+

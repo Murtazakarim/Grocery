@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_4">
+
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_subcat_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/iv_subcat_img"
+            app:layout_constraintRight_toLeftOf="@+id/iv_subcat_minus"
+            app:layout_constraintTop_toTopOf="@+id/iv_subcat_img">
+
+            <TextView
+                android:id="@+id/tv_subcat_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_light"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_subcat_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_X_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="@dimen/space_3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_subcat_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:text=" TextView"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/currency"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_small" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/space_4"
+
+                android:layout_marginBottom="@dimen/space_3"
+                android:background="@drawable/slider_shape"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text_rw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:text="@string/rewards_points"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+
+                    android:id="@+id/tv_reward_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@dimen/space_18"
+                    android:layout_alignParentEnd="true"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_small" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_subcat_plus"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="12dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/plus" />
+
+        <TextView
+            android:id="@+id/tv_subcat_contetiy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="@dimen/space_8"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_subcat_plus"
+            app:layout_constraintRight_toLeftOf="@+id/iv_subcat_plus"
+            app:layout_constraintTop_toTopOf="@+id/iv_subcat_plus"
+            app:layout_constraintVertical_bias="0.727" />
+
+        <ImageView
+            android:id="@+id/iv_subcat_minus"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_subcat_plus"
+            app:layout_constraintRight_toLeftOf="@+id/tv_subcat_contetiy"
+            app:layout_constraintTop_toTopOf="@+id/iv_subcat_plus"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/minus" />
+
+        <TextView
+            android:id="@+id/tv_subcat_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_rounded_button"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tv_pro_add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_X_small"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_subcat_minus"
+            app:layout_constraintRight_toRightOf="@+id/iv_subcat_plus"
+            app:layout_constraintTop_toBottomOf="@+id/iv_subcat_plus" />
+
+        <ImageView
+            android:id="@+id/iv_subcat_remove"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="388dp"
+            android:layout_marginTop="8dp"
+            android:tint="@color/dark_gray"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/close" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

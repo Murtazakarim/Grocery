@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "343131004834",
+    "firebase_url": "https://grocme-2f52a.firebaseio.com",
+    "project_id": "grocme-2f52a",
+    "storage_bucket": "grocme-2f52a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343131004834:android:c2506c4431a14e2f",
+        "android_client_info": {
+          "package_name": "com.hmos.grocme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343131004834-jafsgrgkhai2cle2umq0l3pukiaet9l5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK3kQgqlB448DmET3wDDawnABrMJ29GOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343131004834-jafsgrgkhai2cle2umq0l3pukiaet9l5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343131004834:android:3dcb709f9c231b79",
+        "android_client_info": {
+          "package_name": "gogrocer.tcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343131004834-jafsgrgkhai2cle2umq0l3pukiaet9l5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK3kQgqlB448DmET3wDDawnABrMJ29GOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343131004834-jafsgrgkhai2cle2umq0l3pukiaet9l5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
